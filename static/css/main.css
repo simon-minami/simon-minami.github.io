@@ -25,6 +25,20 @@ body {
     height: 25rem;
 } */
 
+.top-flex {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.top-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 /* .top-section h2 {
     font-weight: 400;
 }

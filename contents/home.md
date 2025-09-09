@@ -1,17 +1,18 @@
 
 
-[![senli1073](https://img.shields.io/badge/senli1073-github-blue?logo=github)](https://github.com/senli1073)
+[![simon-minami](https://img.shields.io/badge/senli1073-github-blue?logo=github)](https://github.com/simon-minami)
 
-He is currently a Fellow in the Department of Earth and Planetary Sciences (EPS) at Harvard University.
+Hi, I'm Simon. I'm currently pursuing my MS in computer vision (MSCV) at Carnegie Mellon. 
+In the process of looking for 2026 Summer internships in computer vision / machine learning!
 
 #### Contact
 
-Email: senli[at]fas.harvard.edu
+Email: simon.sho.minami[at]gmail.com
 
 #### Education
-M.E., Computer Science and Technology, China University of Mining and Technology, 2022—2025.\
-B.E., Data Science and Big Data Technology, China University of Mining and Technology, 2018—2022.
+MS, Computer Vision, Carnegie Mellon University, 2025-2026.\
+BS, Data Science, Tufts University, 2021-2024.
+
 
 #### Research Interests
-Deep Learning, Artificial Intelligence Seismology, Mine Microseismic.
-
+Computer Vision, Multi-Object Tracking, 3D Reconstruction

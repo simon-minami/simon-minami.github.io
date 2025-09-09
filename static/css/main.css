@@ -1,3 +1,11 @@
+a.icon-link {
+    text-decoration: none !important;
+}
+
+a.icon-link img {
+    border: none;
+    vertical-align: middle;
+}
 .home-flex {
     display: flex;
     align-items: flex-start;

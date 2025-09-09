@@ -1,10 +1,10 @@
 <p align="center">
   <a href="https://github.com/simon-minami">
-    <img src="assets/img/github.svg" alt="GitHub" width="32" height="32" />
+    <img src="static/assets/img/github.svg" alt="GitHub" width="32" height="32" />
   </a>
   &nbsp;&nbsp;
   <a href="https://www.linkedin.com/in/simon-minami-7158a61ba/">
-    <img src="assets/img/linkedin.svg" alt="LinkedIn" width="32" height="32" />
+    <img src="static/assets/img/linkedin.svg" alt="LinkedIn" width="32" height="32" />
   </a>
 </p>
 

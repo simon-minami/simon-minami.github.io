@@ -6,6 +6,7 @@
   <a href="https://www.linkedin.com/in/simon-minami-7158a61ba/">
     <img src="static/assets/img/linkedin.svg" alt="LinkedIn" width="32" height="32" />
   </a>
+  <a href="static/assets/resume.pdf" target="_blank">Resume</a>
 </p>
 
 Hi, I'm Simon. I'm currently pursuing my MS in computer vision (MSCV) at Carnegie Mellon. 

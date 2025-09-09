@@ -13,6 +13,9 @@
 .bg-bottom {
     background-color: var(--h-title-color);
 }
+body {
+  padding-top: 0 !important;
+}
 
 /* .top-section {
     position: relative;

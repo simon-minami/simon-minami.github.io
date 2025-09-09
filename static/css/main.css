@@ -14,7 +14,7 @@
     background-color: var(--h-title-color);
 }
 body {
-  padding-top: 0 !important;
+    padding-top: 70px !important; /* Adjust to match your navbar height */
 }
 
 /* .top-section {

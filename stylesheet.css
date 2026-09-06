@@ -332,18 +332,31 @@ body {
 
 .affiliation-grid {
     display: grid;
-    grid-template-columns: repeat(6, minmax(140px, 1fr));
-    gap: 0px 0px;
+    grid-template-columns: 1fr;
+    gap: 16px;
     align-items: start;
     width: 100%;
 }
+
+.affiliation-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Current affiliation first, followed by prior experience and education. */
+.affiliation-card:nth-child(1) { order: 2; }
+.affiliation-card:nth-child(2) { order: 1; }
+.affiliation-card:nth-child(3) { order: 3; }
+.affiliation-card:nth-child(4) { order: 4; }
+
 
 .affiliation-card img {
     width: 100px;
     height: 100px;
     object-fit: contain;
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 0;
 }
 
 .affiliation-card.placeholder {
@@ -351,7 +364,7 @@ body {
 }
 
 .affiliation-text {
-    width: 120px;
+    width: auto;
     font-size: 11px;
     text-align: left;
     }
@@ -363,8 +376,8 @@ body {
 
 @media screen and (max-width: 1024px) {
     .affiliation-grid {
-        grid-template-columns: repeat(4, minmax(100px, 1fr));
-        gap: 18px 24px;
+        grid-template-columns: 1fr;
+        gap: 16px;
     }
 }
 
@@ -424,15 +437,15 @@ body {
     }
     
     .affiliation-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 20px 20px;
-        justify-items: center;
+        grid-template-columns: 1fr;
+        gap: 16px;
+        justify-items: start;
         margin-bottom: 28px;
     }
     
     .affiliation-card {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
     
@@ -445,7 +458,7 @@ body {
     
     .affiliation-text {
         font-size: 11px;
-        text-align: center;
+        text-align: left;
     }
     
     .publications-table {

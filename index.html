@@ -162,12 +162,13 @@
                 box-sizing: border-box !important;
             }
             
-            img[src*="National_Taiwan_Normal_University"],
+            img[src*="tufts_logo"],
             img[src*="cmu_icon"],
-            img[src*="meta_icon"],
-            img[alt="NTNU"],
+            img[src*="ge_logo"],
+            img[src*="cbb_logo"],
+            img[alt="Tufts University"],
             img[alt="CMU"],
-            img[alt="Meta"] {
+            img[alt="GE Aerospace"] {
                 width: 120px !important;
                 height: 120px !important;
                 max-width: 120px !important;
@@ -200,9 +201,10 @@
         }
     </style>
     <script type="text/javascript" src="hidebib.js"></script>
-    <title>Jyun-Ting Song</title>
-    <meta name="Jyun-Ting&#39;s CMU Homepage" http-equiv="Content-Type"
-          content="Jyun-Ting&#39;s Homepage">
+    <title>Simon Minami</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A4%96%3C/text%3E%3C/svg%3E">
+    <meta name="Simon Minami's Homepage" http-equiv="Content-Type"
+          content="Simon Minami's Homepage">
 
     <link href="stylesheet.css" rel="stylesheet" type="text/css">
     <script>
@@ -227,7 +229,9 @@
   <body>
     <script>
       function showEmail() {
-        document.getElementById('emailHolder').innerHTML = 'ude.umc.werdna@snitnuyj'.split("").reverse().join("");
+        var emailHolder = document.getElementById('emailHolder');
+        emailHolder.textContent = 'simon.sho.minami@gmail.com';
+        emailHolder.disabled = true;
       }
       
       function toggleOlderNews() {
@@ -248,7 +252,7 @@
         <tbody>
         <tr>
             <td>
-                <p align="center"><font size="7">Jyun-Ting Song</font><br>
+                <p align="center"><font size="7">Simon Minami</font><br>
                 </p>
                 <table class="intro-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="8">
                     <tbody>
@@ -256,28 +260,23 @@
                         <td width="67%" valign="middle" align="justify">
     
                           <p style="line-height: 1.7;">
-                            I am a first-year Ph.D. student at the <a href="https://www.ri.cmu.edu/">Robotics Institute</a>, <a href="https://www.cmu.edu/">Carnegie Mellon University</a>, advised by Prof. <a href="https://kriskitani.github.io/">Kris Kitani</a>.
-                            I previously earned my Master of Science in Robotics (MSR) from the same institute, also under Prof. Kitani's supervision.
-                            Before starting my Ph.D., I was a Research Scientist Intern at <a href="https://ai.meta.com/research/">Meta FAIR</a>.
-                            I received my B.S. in Electrical Engineering from <a href="https://en.ntnu.edu.tw/">National Taiwan Normal University</a>,
-                            where I was advised by Prof. <a href="https://sites.google.com/site/jackybaltes/home">Jacky Baltes</a>.
+                            I am in the final semester of my master's in Computer Vision at the <a href="https://www.ri.cmu.edu/">Robotics Institute</a> at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>, under Professor <a href="https://kriskitani.github.io/">Kris Kitani</a>'s supervision. I received my B.S. in Data Science from <a href="https://www.tufts.edu/">Tufts University</a>.
                           </p>
                           
                           <p style="color:red; text-align:center; line-height: 1.4;">
-                            I am currently looking for a summer internship in 2027.
+                            I am currently looking for full-time roles in computer vision starting in early 2027.
                           </p>
 
                           <p style="text-align:center">
-                            <a href="#" onclick="showEmail(); return false;" id="emailHolder"> Click to Reveal Email </a> &nbsp;/&nbsp;
-                            <a href="data/Jyun-Ting-CV.pdf">CV</a> &nbsp;/&nbsp;
-                            <a href="https://scholar.google.com/citations?hl=en&user=N1dz8cAAAAAJ">Scholar</a> &nbsp;/&nbsp;
-                            <a href="https://github.com/jyuntins/">GitHub</a> &nbsp;/&nbsp;
-                            <a href="https://www.linkedin.com/in/jyun-ting-song-699b91222/">Linkedin</a>
+                            <button type="button" onclick="showEmail()" id="emailHolder" style="color:#1772d0;background:none;border:0;padding:0;font:inherit;cursor:pointer;">Email</button> &nbsp;/&nbsp;
+                            <a href="resume.pdf">Resume</a> &nbsp;/&nbsp;
+                            <a href="https://github.com/simon-minami">GitHub</a> &nbsp;/&nbsp;
+                            <a href="https://www.linkedin.com/in/simon-minami-7158a61ba/">LinkedIn</a>
                           </p>
 
                         </td>
                         <td style="padding:2.5%;width:40%;max-width:40%;text-align:center;">
-                          <a href="images/jyuntins.jpg"><img style="width:100%;max-width:200px;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/jyuntins.jpg" class="hoverZoomLink"></a>
+                          <a href="images/sminami.jpg"><img style="width:100%;max-width:200px;object-fit: cover; border-radius: 50%;" alt="Profile photo of Simon Minami" src="images/sminami.jpg" class="hoverZoomLink"></a>
                         </td>
                     </tr>
                     </tbody>
@@ -288,17 +287,16 @@
                   <tbody>
                     <tr>
                         <td>
-                            <h2 id="research">Research Interests</h2>
+                            <h2 id="research">Research Interests and Experience</h2>
                             <hr style="border: 0; border-top: 1px solid #ccc; margin: 0;">
                         </td>
                     </tr>
                     <tr>
                         <td class="section-content">
                             <p style="margin: 0; padding: 0; line-height: 1.5;">
-                                My research focuses on advancing human-centric AI. I am currently interested in:
-                                <span style="display: block; margin-top: 5px; margin-bottom: 5px; padding-left: 0; text-indent: 0;"><span style="display: inline-block; width: 1.5em; vertical-align: top; text-align: right; padding-right: 0.5em;">•</span><span style="display: inline-block; width: calc(100% - 2em); vertical-align: top;">Multi-view capture systems for in-the-wild human reconstruction under interaction scenarios</span></span>
-                                <span style="display: block; margin-top: 5px; margin-bottom: 5px; padding-left: 0; text-indent: 0;"><span style="display: inline-block; width: 1.5em; vertical-align: top; text-align: right; padding-right: 0.5em;">•</span><span style="display: inline-block; width: calc(100% - 2em); vertical-align: top;">Physically plausible human mesh recovery and optimization</span></span>
-                                <span style="display: block; margin-top: 5px; margin-bottom: 5px; padding-left: 0; text-indent: 0;"><span style="display: inline-block; width: 1.5em; vertical-align: top; text-align: right; padding-right: 0.5em;">•</span><span style="display: inline-block; width: calc(100% - 2em); vertical-align: top;">Physics-based humanoid control with contact-aware estimation</span></span>
+                                I'm broadly interested in 3D vision and reconstruction, especially for understanding dynamic scenes and physical interactions.
+                                <span style="display: block; margin-top: 8px; padding-left: 0; text-indent: 0;"><span style="display: inline-block; width: 1.5em; vertical-align: top; text-align: right; padding-right: 0.5em;">•</span><span style="display: inline-block; width: calc(100% - 2em); vertical-align: top;">At CMU, my capstone project focuses on designing a multiview capture rig and reconstruction pipeline for complex hand–deformable-object interactions. Check out some of our work <a href="https://mscvprojects.ri.cmu.edu/2026teamf19/">here</a>! <strong>Skills:</strong> Multiview geometry, camera calibration, Gaussian splatting, 3D reconstruction.</span></span>
+                                <span style="display: block; margin-top: 8px; padding-left: 0; text-indent: 0;"><span style="display: inline-block; width: 1.5em; vertical-align: top; text-align: right; padding-right: 0.5em;">•</span><span style="display: inline-block; width: calc(100% - 2em); vertical-align: top;">Extracted tracking data from broadcast video at CBB Analytics. Check out some of the work <a href="data/cbb_project.pdf">here</a>! <strong>Skills:</strong> Multi-object tracking, homography estimation.</span></span>
                             </p>
                         </td>
                     </tr>
@@ -315,21 +313,17 @@
                     </tr>
                     <tr>
                         <td class="section-content">
-                            <p style="margin: 0; padding: 0; line-height: 1.5;">
-                                <span style="display: block; margin-top: 5px; margin-bottom: 5px; padding-left: 0; text-indent: 0;"><span style="display: inline-block; width: 6em; vertical-align: top; text-align: right; padding-right: 0.5em;">• <strong>[2025/12]</strong></span><span style="display: inline-block; width: calc(100% - 6.5em); vertical-align: top;">I passed my MSR thesis defense at Carnegie Mellon University on the thesis title "Multi View 4D Human Reconstruction under Interaction Scenarios''.</span></span>
-                                <span style="display: block; margin-top: 5px; margin-bottom: 5px; padding-left: 0; text-indent: 0;"><span style="display: inline-block; width: 6em; vertical-align: top; text-align: right; padding-right: 0.5em;">• <strong>[2025/11]</strong></span><span style="display: inline-block; width: calc(100% - 6.5em); vertical-align: top;"><a href="https://ai.meta.com/sam3d/">SAM3D Body</a> was released as a part of <a href="https://ai.meta.com/sam3d/">SAM3D</a> together with <a href="https://ai.meta.com/sam3/">SAM3</a>. I was part of the SAM3D Body team and contributed to the model development and model training.</span></span>
-                                <span style="display: block; margin-top: 5px; margin-bottom: 5px; padding-left: 0; text-indent: 0;"><span style="display: inline-block; width: 6em; vertical-align: top; text-align: right; padding-right: 0.5em;">• <strong>[2025/11]</strong></span><span style="display: inline-block; width: calc(100% - 6.5em); vertical-align: top;"><a href="https://jyuntins.github.io/harmony4d/">Contact4D</a> and <a href="https://jyuntins.github.io/harmony4d/">BodyContact4D</a> were accepted to <a href="https://3dvconf.github.io/2026/">3DV 2026</a>.</span></span>
-                                <span style="display: block; margin-top: 5px; margin-bottom: 5px; padding-left: 0; text-indent: 0;"><span style="display: inline-block; width: 6em; vertical-align: top; text-align: right; padding-right: 0.5em;">• <strong>[2025/06]</strong></span><span style="display: inline-block; width: calc(100% - 6.5em); vertical-align: top;">I attended <a href="https://cvpr.thecvf.com/Conferences/2025">CVPR 2025</a> in Nashville, United States.</span></span>
-                                <span style="display: block; margin-top: 5px; margin-bottom: 5px; padding-left: 0; text-indent: 0;"><span style="display: inline-block; width: 6em; vertical-align: top; text-align: right; padding-right: 0.5em;">• <strong>[2025/06]</strong></span><span style="display: inline-block; width: calc(100% - 6.5em); vertical-align: top;">I started a new position as a Research Scientist Intern at <a href="https://ai.meta.com/research/">Meta FAIR</a>, working on a promptable human mesh recovery model.</span></span>
-                                <span style="display: block; margin-top: 5px; margin-bottom: 5px; padding-left: 0; text-indent: 0;"><span style="display: inline-block; width: 6em; vertical-align: top; text-align: right; padding-right: 0.5em;">• <strong>[2024/12]</strong></span><span style="display: inline-block; width: calc(100% - 6.5em); vertical-align: top;">I attended <a href="https://neurips.cc/Conferences/2024">NeurIPS 2024</a> in Vancouver, Canada.</span></span>
-                                <span id="older_news" style="display: none;">
-                                <span style="display: block; margin-top: 5px; margin-bottom: 5px; padding-left: 0; text-indent: 0;"><span style="display: inline-block; width: 6em; vertical-align: top; text-align: right; padding-right: 0.5em;">• <strong>[2024/09]</strong></span><span style="display: inline-block; width: calc(100% - 6.5em); vertical-align: top;"><a href="https://jyuntins.github.io/harmony4d/">Harmony4D</a> was accepted to <a href="https://neurips.cc/Conferences/2024">NeurIPS 2024</a>, Dataset and Benchmark Track.</span></span>
-                                <span style="display: block; margin-top: 5px; margin-bottom: 5px; padding-left: 0; text-indent: 0;"><span style="display: inline-block; width: 6em; vertical-align: top; text-align: right; padding-right: 0.5em;">• <strong>[2024/01]</strong></span><span style="display: inline-block; width: calc(100% - 6.5em); vertical-align: top;">I started a new position as a Graduate Research Assistant at the Robotics Institute, Carnegie Mellon University.</span></span>
-                                <span style="display: block; margin-top: 5px; margin-bottom: 5px; padding-left: 0; text-indent: 0;"><span style="display: inline-block; width: 6em; vertical-align: top; text-align: right; padding-right: 0.5em;">• <strong>[2023/09]</strong></span><span style="display: inline-block; width: calc(100% - 6.5em); vertical-align: top;">I started my MSR journey at Carnegie Mellon University.</span></span>
-                                </span>
-                                <br>
-                                <a href="#" onclick="toggleOlderNews(); return false;" id="news_toggle" style="color: #666;">Show older news</a>
+                            <p class="news-list" style="margin: 0; padding: 0; line-height: 1.5;">
+                                <span style="display: block; margin: 5px 0; padding-left: 0; text-indent: 0;"><span style="display: inline-block; width: 6em; vertical-align: top; text-align: right; padding-right: 0.5em;">• <strong>[05/2026]</strong></span><span style="display: inline-block; width: calc(100% - 6.5em); vertical-align: top;">Started a new position as a Computer Vision Intern at <a href="https://www.geaerospace.com/">GE Aerospace</a>.</span></span>
+                                <span style="display: block; margin: 5px 0; padding-left: 0; text-indent: 0;"><span style="display: inline-block; width: 6em; vertical-align: top; text-align: right; padding-right: 0.5em;">• <strong>[01/2026]</strong></span><span style="display: inline-block; width: calc(100% - 6.5em); vertical-align: top;">Started my <a href="https://mscvprojects.ri.cmu.edu/2026teamf19/">capstone project</a> on 4D reconstruction of human pottery shaping.</span></span>
+                                <span style="display: block; margin: 5px 0; padding-left: 0; text-indent: 0;"><span style="display: inline-block; width: 6em; vertical-align: top; text-align: right; padding-right: 0.5em;">• <strong>[08/2025]</strong></span><span style="display: inline-block; width: calc(100% - 6.5em); vertical-align: top;">Started my M.S. in Computer Vision at Carnegie Mellon University.</span></span>
+                                <span style="display: block; margin: 5px 0; padding-left: 0; text-indent: 0;"><span style="display: inline-block; width: 6em; vertical-align: top; text-align: right; padding-right: 0.5em;">• <strong>[08/2024]</strong></span><span style="display: inline-block; width: calc(100% - 6.5em); vertical-align: top;">Started a new position as a Computer Vision Engineer at <a href="https://cbbanalytics.com/">CBB Analytics</a>.</span></span>
+                                <span style="display: block; margin: 5px 0; padding-left: 0; text-indent: 0;"><span style="display: inline-block; width: 6em; vertical-align: top; text-align: right; padding-right: 0.5em;">• <strong>[08/2024]</strong></span><span style="display: inline-block; width: calc(100% - 6.5em); vertical-align: top;">Graduated with my B.S. in Data Science from Tufts University!</span></span>
                             </p>
+                            <span id="older_news" style="display: none;"></span>
+                            <br>
+                            <a href="#" onclick="toggleOlderNews(); return false;" id="news_toggle" style="color: #666;">Show older news</a>
+
                         </td>
                     </tr>
                   </tbody>
@@ -347,33 +341,38 @@
                         <td class="section-content">
                             <div class="affiliation-grid">
                                 <div class="affiliation-card">
-                                    <img src="images/National_Taiwan_Normal_University_logo.svg.png" alt="NTNU">
-                                    <div class="affiliation-text">
-                                        B.S. in EE<br>
-                                        Advisor: <a href="https://sites.google.com/site/jackybaltes/home">Jacky Baltes</a><br>
-                                        <em>Sept 2017 ~ Jun 2021</em>
-                                    </div>
+                                        <img src="images/ge_logo.png" alt="GE Aerospace">
+                                        <div class="affiliation-text">
+                                            Computer Vision Intern<br>
+                                            GE Aerospace<br>
+                                            <em>May 2026 ~ Aug 2026</em>
+                                        </div>
                                 </div>
                                 <div class="affiliation-card">
                                     <img src="images/cmu_icon.png" alt="CMU">
                                     <div class="affiliation-text">
-                                        M.S. in Robotics<br>
+                                        M.S. in Computer Vision<br>
                                         Robotics Institute<br>
-                                        Advisor: <a href="https://kriskitani.github.io/">Kris Kitani</a><br>
-                                        <em>Sept 2023 ~ Present</em>
+                                        Capstone Advisor: <a href="https://kriskitani.github.io/">Kris Kitani</a><br>
+                                        <em>Aug 2025 ~ Present</em>
                                     </div>
                                 </div>
                                 <div class="affiliation-card">
-                                        <img src="images/meta_icon.png" alt="Meta">
-                                        <div class="affiliation-text">
-                                            Research Scientist Intern, FAIR<br>
-                                            PI: <a href="https://scholar.google.com/citations?user=k0qC-7AAAAAJ&hl=en">Xitong Yang</a><br>
-                                            <em>June 2025 ~ Sept 2025</em>
-                                        </div>
+                                    <img src="images/cbb_logo.jpg" alt="CBB Analytics">
+                                    <div class="affiliation-text">
+                                        Computer Vision Engineer<br>
+                                        CBB Analytics<br>
+                                        <em>Aug 2024 ~ Aug 2025</em>
+                                    </div>
                                 </div>
-                                <div class="affiliation-card placeholder"></div>
-                                <div class="affiliation-card placeholder"></div>
-                                <div class="affiliation-card placeholder"></div>
+                                <div class="affiliation-card">
+                                    <img src="images/tufts_logo.png" alt="Tufts University">
+                                    <div class="affiliation-text">
+                                        B.S. in Data Science<br>
+                                        Tufts University<br>
+                                        <em>Sept 2021 ~ Aug 2024</em>
+                                    </div>
+                                </div>
                             </div>
                         </td>
                     </tr>
@@ -381,8 +380,7 @@
                 </table>
     
     
-                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="8">
-    
+                <table class="publications-section" width="100%" align="center" border="0" cellspacing="0" cellpadding="8">
                   <tbody>
                     <tr>
                         <td colspan="100%">
@@ -390,379 +388,6 @@
                             <hr style="border: 0; border-top: 1px solid #ccc; margin: 0; width: 100%;">
                         </td>
                     </tr>
-
-                    <tr>
-                        <td style="padding:20px 20px 40px 0;width:23.75%;vertical-align:top;">
-                            <img src="images/interpet4d.gif" alt="InterPet4D" style="width:100%;max-width:100%;object-fit:contain;display:block;">
-                        </td>
-
-                        <td width="54.25%" valign="top" style="vertical-align:top;padding:20px 0 40px 0;">
-                            <div class="pub-text">
-                                <p class="pub-meta"><a href="https://interactive-intelligence-lab.github.io/InterPet4D-Homepage/" id="interpet4d_title">
-                                    <heading>InterPet4D: A Multimodal 4D Human-Pet Interaction Dataset for Pet Motion Generation</heading>
-                                </a><br>
-                                    Yichen Peng*, <strong>Jyun-Ting Song*</strong>, Chen-Chieh Liao*, Kris Kitani, Hideki Koike, Erwin Wu
-                                    <br>
-                                    <em>European Conference on Computer Vision (ECCV)</em>, 2026
-                                </p>
-                                <p class="pub-desc">
-                                    A multimodal 4D dataset of natural human-dog interactions for pet motion generation.
-                                </p>
-
-                                <div class="paper" id="interpet4d">
-                                    <a href="https://interactive-intelligence-lab.github.io/InterPet4D-Homepage/paper.pdf">paper</a> |
-                                    <a href="javascript:toggleblock(&#39;interpet4d_abs&#39;)">abstract</a> |
-                                    <a href="https://interactive-intelligence-lab.github.io/InterPet4D-Homepage/">video</a> |
-                                    <a href="https://interactive-intelligence-lab.github.io/InterPet4D-Homepage/">project</a> |
-                                    <a href="https://huggingface.co/datasets/ohicarip/interpet4d">dataset</a> |
-                                    <a shape="rect" href="javascript:togglebib(&#39;interpet4d&#39;)" class="togglebib">bibtex</a>
-
-                                    <p align="justify"><i id="interpet4d_abs" style="display: none;">
-                                        InterPet4D captures synchronized multi-view and egocentric video, audio, and reconstructed 3D motion from natural human-dog interactions. It contains 6.8 million frames from 23 people and 13 dogs across 11 breeds. The work also introduces InterPetMoGen, a framework that generates dog motion conditioned on human gestures and audio.
-                                    </i></p>
-
-                                    <div id="interpet4d_bib" style="white-space: pre-wrap; display: none;" class="bib">
-@inproceedings{peng2026interpet4d,
-title     = {InterPet4D: A Multimodal 4D Human-Pet Interaction Dataset for Pet Motion Generation},
-author    = {Peng, Yichen and Song, Jyun-Ting and Liao, Chen-Chieh and Kitani, Kris and Koike, Hideki and Wu, Erwin},
-booktitle = {European Conference on Computer Vision (ECCV)},
-year      = {2026}
-}
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td style="padding:20px 20px 40px 0;width:23.75%;vertical-align:top;">
-                            <img src="images/grip.png" alt="Ground Reaction Inertial Poser" style="width:100%;max-width:100%;object-fit:contain;display:block;">
-                        </td>
-
-                        <td width="54.25%" valign="top" style="vertical-align:top;padding:20px 0 40px 0;">
-                            <div class="pub-text">
-                                <p class="pub-meta"><a href="https://ryosukehori.github.io/grip-project/" id="grip_title">
-                                    <heading>Ground Reaction Inertial Poser: Physics-based Human Motion Capture from Sparse IMUs and Insole Pressure Sensors</heading>
-                                </a><br>
-                                    Ryosuke Hori, <strong>Jyun-Ting Song</strong>, Zhengyi Luo, Jinkun Cao, Soyong Shin, Hideo Saito, Kris Kitani
-                                    <br>
-                                    <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2026
-                                </p>
-                                <p class="pub-desc">
-                                    Physics-based full-body motion capture using four wearable IMUs and insole pressure sensors.
-                                </p>
-
-                                <div class="paper" id="grip">
-                                    <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Hori_Ground_Reaction_Inertial_Poser_Physics-based_Human_Motion_Capture_from_Sparse_CVPR_2026_paper.pdf">paper</a> |
-                                    <a href="javascript:toggleblock(&#39;grip_abs&#39;)">abstract</a> |
-                                    <a href="https://ryosukehori.github.io/grip-project/">project</a> |
-                                    <a href="https://github.com/RyosukeHori/GRIP">code</a> |
-                                    <a href="https://github.com/RyosukeHori/PRISM">dataset</a> |
-                                    <a href="https://www.youtube.com/watch?v=qK5_5gAFQLI">video</a> |
-                                    <a shape="rect" href="javascript:togglebib(&#39;grip&#39;)" class="togglebib">bibtex</a>
-
-                                    <p align="justify"><i id="grip_abs" style="display: none;">
-                                        GRIP combines signals from four wearable IMUs with foot-pressure measurements to recover physically plausible human motion. A kinematic network estimates pose and velocity, while a dynamics network controls a digital humanoid in simulation. The accompanying PRISM dataset provides synchronized inertial, pressure, motion-capture, and environment data for training and evaluation.
-                                    </i></p>
-
-                                    <div id="grip_bib" style="white-space: pre-wrap; display: none;" class="bib">
-@inproceedings{hori2026grip,
-title     = {Ground Reaction Inertial Poser: Physics-based Human Motion Capture from Sparse IMUs and Insole Pressure Sensors},
-author    = {Hori, Ryosuke and Song, Jyun-Ting and Luo, Zhengyi and Cao, Jinkun and Shin, Soyong and Saito, Hideo and Kitani, Kris},
-booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-year      = {2026}
-}
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                  
-                    <tr>
-                        <td style="padding:20px 20px 40px 0;width:23.75%;vertical-align:top;">
-                            <img src="images/sam3dbody.gif" alt="SAM 3D Body" style="width:100%;max-width:100%;object-fit:contain;display:block;">
-                        </td>
-
-                        <td width="54.25%" valign="top" style="vertical-align:top;padding:20px 0 40px 0;">
-                            <div class="pub-text">
-                                <p class="pub-meta"><a href="https://ai.meta.com/research/publications/sam-3d-body-robust-full-body-human-mesh-recovery/" id="sam3dbody_title">
-                                    <heading>SAM 3D Body: Robust Full-Body Human Mesh Recovery</heading>
-                                </a><br>
-                                    SAM3D Body Team at Meta
-                                    <br>
-                                    <em>Technical Report</em>, 2025
-                                </p>
-                                <p class="pub-desc">
-                                    A promptable 3D human mesh recovery model.
-                                </p>
-    
-                                <div class="paper" id="sam3dbody">
-                                    <a href="https://ai.meta.com/research/publications/sam-3d-body-robust-full-body-human-mesh-recovery/">Tech Report</a> |
-                                    <a href="https://www.aidemos.meta.com/segment-anything/editor/convert-body-to-3d">Playground</a> |
-                                    <a href="https://ai.meta.com/sam3d/">Blog</a> |
-                                    <a href="https://github.com/facebookresearch/sam-3d-body">Github</a>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                  
-                    <tr>
-                        <td style="padding:20px 20px 40px 0;width:30%;vertical-align:top;">
-                            <img src="images/contact4d.gif" alt="Contact4D" style="width:100%;max-width:100%;object-fit:contain;display:block;">
-                        </td>
-
-                        <td width="54.25%" valign="top" style="vertical-align:top;padding:20px 0 40px 0;">
-                            <div class="pub-text">
-                                <p class="pub-meta"><a href="https://jyuntins.github.io/harmony4d" id="contact4d_title">
-                                <heading>Contact4D: A Video Dataset for Whole-body Human Motion and Finger Contact in Dexterous Operations</heading>
-                            </a><br>
-                                <strong>Jyun-Ting Song</strong>, Jungeun Kim, Jinkun Cao, Yu Lei, Takuma Yagi, Kris Kitani
-                                <br>
-                                <em>3D Vision (3DV)</em>, 2026
-                                </p>
-                                <p class="pub-desc">
-                                    A large-scale whole-body human dataset for dexterous operations with finger contact annotations.
-                            </p>
-    
-                            <div class="paper" id="contact4d">
-                                <a href="data/Contact4D.pdf">paper</a> |
-                                <a href="javascript:toggleblock(&#39;contact4d_abs&#39;)">abstract</a> |
-                                <a href="data/Contact4D.pdf">project</a> |
-                                <a href="data/Contact4D.pdf">dataset</a> |
-                                <a shape="rect" href="javascript:togglebib(&#39;contact4d&#39;)" class="togglebib">bibtex</a>
-
-                                <p align="justify"><i id="contact4d_abs" style="display: none;"> 
-                                  Understanding how humans interact with objects is key to building robust human-centric artificial intelligence. 
-                                  However, this area remains relatively unexplored due to the lack of large-scale datasets. 
-                                  Recent datasets focusing on this issue mainly consist of activities captured entirely in controlled lab environments, 
-                                  and contact annotations are mostly estimated using threshold clips. 
-                                  We introduce Contact4D, a multi-view video dataset for human-object interaction that provides detailed body poses and accurate contact annotations. 
-                                  We use a flexible multi-view capture system to record individuals performing furniture assembly tasks and provide annotations for 
-                                  human detection, tracking, 2D/3D pose estimation, and ground-truth contact. 
-                                  Additionally, we propose a novel processing pipeline to extract accurate hand poses even when they are severely occluded. 
-                                  Contact4D consists of 2M images captured from 19 synchronized cameras across 350 video sequences, 
-                                  spanning diverse environments, varioius furniture types, and unique subjects. 
-                                  We evaluate existing methods for human pose estimation and human-centric contact estimation, 
-                                  demonstrating their inability to generalize to our dataset. 
-                                  Lastly, we fine-tune a pretrained MultiHMR model on Contact4D and observe an improved performance of 56.6% body MPJPE and 26.4% hand MPJPE in scenarios under severe self-occlusion and object occlusion. 
-                                  </i>
-                                </p>
-    
-                                <div id="contact4d_bib" style="white-space: pre-wrap; display: none;" class="bib">
-@inproceedings{song2024contact4d,
-title     = {Contact4D: A Video Dataset for Whole-body Human Motion and Finger Contact in Dexterous Operations},
-author    = {Song, Jyun-Ting and Kim, Jungeun and Cao, Jinkun and Lei, Yu and Yagi, Takuma and Kitani, Kris},
-booktitle = {3D Vision (3DV)},
-year      = {2026}
-}
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td style="padding:20px 20px 40px 0;width:23.75%;vertical-align:top;">
-                            <img src="images/bodycontact4d.png" alt="BodyContact4D" style="width:100%;max-width:100%;object-fit:contain;display:block;">
-                        </td>
-
-                        <td width="54.25%" valign="top" style="vertical-align:top;padding:20px 0 40px 0;">
-                            <div class="pub-text">
-                                <p class="pub-meta"><a href="#" id="bodycontact4d_title">
-                                    <heading>BodyContact4D: A Multi-view Video Dataset for Understanding Human and Environment Interactions</heading>
-                                </a><br>
-                                    Soyong Shin, Chaeeun Lee, Holly Chen, <strong>Jyun-Ting Song</strong>, Eni Halilaj, Kris Kitani
-                                    <br>
-                                    <em>3D Vision (3DV)</em>, 2026
-                                </p>
-                                <p class="pub-desc">
-                                    A large-scale human dataset for body part contact estimation.
-                                </p>
-
-                                <div class="paper" id="bodycontact4d">
-                                    <a href="javascript:toggleblock(&#39;bodycontact4d_abs&#39;)">abstract</a> |
-                                    <a href="#">project</a> |
-                                    <a href="#">dataset</a> |
-                                    <a shape="rect" href="javascript:togglebib(&#39;bodycontact4d&#39;)" class="togglebib">bibtex</a>
-
-                                <p align="justify"><i id="bodycontact4d_abs" style="display: none;"> 
-                                </i>
-                                </p>
-    
-                                <div id="bodycontact4d_bib" style="white-space: pre-wrap; display: none;" class="bib">
-@inproceedings{shin2026bodycontact4d,
-title     = {BodyContact4D: A Multi-view Video Dataset for Understanding Human and Environment Interactions},
-author    = {Shin, Soyong and Lee, Chaeeun and Chen, Holly and Song, Jyun-Ting and Halilaj, Eni and Kitani, Kris},
-booktitle = {3D Vision (3DV)},
-year      = {2026}
-}
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-
-
-
-
-                    <tr>
-                        <td style="padding:20px 20px 40px 0;width:23.75%;vertical-align:top;">
-                            <img src="images/harmony4d.gif" alt="Harmony4D" style="width:100%;max-width:100%;object-fit:contain;display:block;">
-                        </td>
-
-                        <td width="54.25%" valign="top" style="vertical-align:top;padding:20px 0 40px 0;">
-                            <div class="pub-text">
-                                <p class="pub-meta"><a href="https://jyuntins.github.io/harmony4d" id="harmony4d_title">
-                                <heading>Harmony4D: A Video Dataset for In-The-Wild Close Human Interactions</heading>
-                            </a><br>
-                                Rawal Khirodkar*, <strong>Jyun-Ting Song*</strong>, Jinkun Cao, Zhengyi Luo, Kris Kitani
-                                <br>
-                                <em>Neural Information Processing Systems (NeurIPS)</em>, 2024
-                                </p>
-                                <p class="pub-desc">
-                                    A large-scale multi-human dataset for close human interactions captured in in-the-wild environments.
-                            </p>
-    
-                            <div class="paper" id="harmony4d">
-                                <a href="https://arxiv.org/abs/2410.20294">paper</a> |
-                                <a href="javascript:toggleblock(&#39;harmony4d_abs&#39;)">abstract</a> |
-                                <a href="https://jyuntins.github.io/harmony4d/">project</a> |
-                                <a href="https://huggingface.co/datasets/Jyun-Ting/Harmony4D/tree/main">dataset</a> |
-                                <a shape="rect" href="javascript:togglebib(&#39;harmony4d&#39;)" class="togglebib">bibtex</a>
-
-                                <p align="justify"><i id="harmony4d_abs" style="display: none;"> 
-                                  Understanding how humans interact with each other is key to building realistic multi-human virtual reality systems. 
-                                  This area remains relatively unexplored due to the lack of large-scale datasets. Recent datasets focusing on this 
-                                  issue mainly consist of activities captured entirely in controlled indoor environments with choreographed actions, 
-                                  significantly affecting their diversity. To address this, we introduce Harmony4D, a multi-view video dataset for 
-                                  human-human interaction featuring in-the-wild activities such as wrestling, dancing, MMA, and more. We use a flexible 
-                                  multi-view capture system to record these dynamic activities and provide annotations for human detection, tracking, 
-                                  2D/3D pose estimation, and mesh recovery for closely interacting subjects. We propose a novel markerless algorithm 
-                                  to track 3D human poses in severe occlusion and close interaction to obtain our annotations with minimal manual 
-                                  intervention. Harmony4D consists of 1.66 million images and 3.32 million human instances from more than 20 
-                                  synchronized cameras with 208 video sequences spanning diverse environments and 24 unique subjects. We rigorously 
-                                  evaluate existing stateof-the-art methods for mesh recovery and highlight their significant limitations in modeling 
-                                  close interaction scenarios. Additionally, we fine-tune a pre-trained HMR2.0 model on Harmony4D and demonstrate an 
-                                  improved performance of 54.8% PVE in scenes with severe occlusion and contact.</i>
-                                </p>
-    
-                                <div id="harmony4d_bib" style="white-space: pre-wrap; display: none;" class="bib">
-@inproceedings{khirodkar2024harmony4d,
-title     = {Harmony4D: A Video Dataset for In-The-Wild Close Human Interactions},
-author    = {Khirodkar, Rawal and Song, Jyun-Ting and Cao, Jinkun and Luo, Zhengyi and Kitani, Kris},
-booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
-year      = {2024}
-}
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-    
-                    <tr>
-                        <td style="padding:20px 20px 40px 0;width:24%;vertical-align:top;">
-                            <img src="images/balance_board.gif" alt="Balance Board" style="width:100%;max-width:100%;object-fit:contain;display:block;">
-                        </td>
-                        <td width="54.25%" valign="top" style="vertical-align:top;padding:20px 0 40px 0;">
-                            <div class="pub-text">
-                                <p class="pub-meta"><a href="https://github.com/NTNU-ERC/Robinion-Balance-Board-PPO" id="balance board">
-                                <heading>Reinforcement Learning and Action Space Shaping for a Humanoid Agent in a Highly Dynamic Environment</heading>
-                            </a><br>
-                                <strong>Jyun-Ting Song</strong>, Guilherme Christmann, Jaesik Jeong, Jacky Baltes<br>
-                                    <em>Springer&#39;s Studies in Computational Intelligence</em>, 2023
-                                </p>
-                                <p class="pub-desc">
-                                    Reinforcement learning framework for training a humanoid agent to balance on a dynamic board via contact-rich control.
-                            </p>
-    
-                            <div class="paper" id="balanceboard">
-                                <a href="https://link.springer.com/chapter/10.1007/978-3-031-26135-0_4">paper</a> |
-                                <a href="javascript:toggleblock(&#39;balanceboard_abs&#39;)">abstract</a> |
-                                <a href="https://github.com/NTNU-ERC/Robinion-Balance-Board-PPO">project</a> |
-                                <a shape="rect" href="javascript:togglebib(&#39;balanceboard&#39;)" class="togglebib">bibtex</a> 
-    
-    
-                                <p align="justify"><i id="balanceboard_abs" style="display: none;"> 
-                                  Reinforcement Learning (RL) is a powerful tool and has been increasingly used in continuous control tasks such 
-                                  as locomotion and balancing in robotics. In this paper, we tackle a balancing task in a highly dynamic environment, 
-                                  using a humanoid agent and a balancing board. This task requires continuous actuation in order for the agent to 
-                                  stay in a balanced state. We developed an implementation using a state-of-theart RL algorithm and simulator that 
-                                  can achieve successful balancing in under 40 minutes of real-time with a single GPU. We sought to examine the impact 
-                                  of action space shaping in sample efficiency and designed 6 distinct control modes. Our constrained parallel control 
-                                  modes outperform a naive baseline in both sample efficiency and variance to the starting seed. The best performing 
-                                  control mode (PLS-R) is around 33% more sample efficient than the second-best, requiring 70 million fewer training 
-                                  timesteps to reach comparable performance.
-                                  </i>
-                                </p>
-    
-                                <div id="balanceboard_bib" style="white-space: pre-wrap; display: none;" class="bib">
-@incollection{song2023reinforcement,
-title     = {Reinforcement Learning and Action Space Shaping for a Humanoid Agent in a Highly Dynamic Environment},
-author    = {Song, Jyun-Ting and Christmann, Guilherme and Jeong, Jaesik and Baltes, Jacky},
-booktitle = {Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing 2022-Winter},
-pages     = {29--42},
-year      = {2023},
-publisher = {Springer}
-}
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-    
-                    <tr>
-                        <td style="padding:20px 20px 20px 0;width:23.75%;vertical-align:top;">
-                            <img src="images/corsmal.gif" alt="CORSMAL" style="width:100%;max-width:100%;object-fit:contain;display:block;">
-                        </td>
-                        <td width="54.25%" valign="top" style="vertical-align:top;padding:20px 0 20px 0;">
-                            <div class="pub-text">
-                                <p class="pub-meta"><a href="https://corsmal.eecs.qmul.ac.uk/benchmark.html" id="corsmal_title">
-                                <heading>The CORSMAL benchmark for the prediction of the properties of containers</heading>
-                            </a><br>
-                                Alessio Xompero, et al.<br>
-                                <em>IEEE Access</em>, 2022
-                                </p>
-                                <p class="pub-desc">
-                                    Benchmark for estimating container properties such as mass, type, and fill level from multimodal audio-visual data.
-                            </p>
-    
-                            <div class="paper" id="corsmal">
-                                <a href="https://ieeexplore.ieee.org/abstract/document/9756023">paper</a> |
-                                <a href="javascript:toggleblock(&#39;corsmal_abs&#39;)">abstract</a> |
-                                <a href="https://corsmal.eecs.qmul.ac.uk/benchmark.html">project</a> |
-                                <a shape="rect" href="javascript:togglebib(&#39;corsmal&#39;)" class="togglebib">bibtex</a> |
-    
-    
-                                <p align="justify"><i id="corsmal_abs" style="display: none;"> 
-                                  The contactless estimation of the weight of a container and the amount of its content manipulated by a person are 
-                                  key pre-requisites for safe human-to-robot handovers. However, opaqueness and transparencies of the container and 
-                                  the content, and variability of materials, shapes, and sizes, make this estimation difficult. In this paper, 
-                                  we present a range of methods and an open framework to benchmark acoustic and visual perception for the estimation 
-                                  of the capacity of a container, and the type, mass, and amount of its content. The framework includes a dataset, 
-                                  specific tasks and performance measures. We conduct an in-depth comparative analysis of methods that used this 
-                                  framework and audio-only or vision-only baselines designed from related works. Based on this analysis, we can conclude 
-                                  that audio-only and audio-visual classifiers are suitable for the estimation of the type and amount of the content 
-                                  using different types of convolutional neural networks, combined with either recurrent neural networks or a majority 
-                                  voting strategy, whereas computer vision methods are suitable to determine the capacity of the container using 
-                                  regression and geometric approaches. Classifying the content type and level using only audio achieves a weighted average 
-                                  F1-score up to 81% and 97%, respectively. Estimating the container capacity with vision-only approaches and estimating 
-                                  the filling mass with audio-visual multi-stage approaches reach up to 65% weighted average capacity and mass scores. 
-                                  These results show that there is still room for improvement on the design of new methods. These new methods can be ranked 
-                                  and compared on the individual leaderboards provided by our open framework.
-                                </i>
-                                </p>
-    
-                                <div id="corsmal_bib" style="white-space: pre-wrap; display: none;" class="bib">
-@article{xompero2022corsmal,
-title     = {The CORSMAL benchmark for the prediction of the properties of containers},
-author    = {Xompero, Alessio and Donaher, Santiago and Iashin, Vladimir and Palermo, Francesca and Solak, G{\"o}khan and Coppola, Claudio and Ishikawa, Reina and Nagao, Yuichi and Hachiuma, Ryo and Liu, Qi and others},
-journal   = {IEEE Access},
-volume    = {10},
-pages     = {41388--41402},
-year      = {2022},
-publisher = {IEEE}
-}
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-
                   </tbody>
                 </table>
     
@@ -772,9 +397,9 @@ publisher = {IEEE}
                         <td>
                             <br>
                             <p align="right"><font size="2">
-                                <a href="https://www.cs.berkeley.edu/~barron/">adapted from Jon Barron's awesome webpage</a>
+                                <a href="https://jyuntins.github.io/">adapted from Jyun-Ting Song's webpage</a>
                             </font></p>
-    
+
                         </td>
                     </tr>
                     </tbody>

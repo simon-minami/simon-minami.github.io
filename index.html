@@ -245,6 +245,18 @@
           toggleLink.innerHTML = 'Show older news';
         }
       }
+
+      function updateOlderNewsToggle() {
+        var olderNews = document.getElementById('older_news');
+        var toggleLink = document.getElementById('news_toggle');
+        var toggleSpacing = document.getElementById('news_toggle_spacing');
+        var hasOlderNews = olderNews && olderNews.textContent.trim().length > 0;
+
+        if (toggleLink) toggleLink.style.display = hasOlderNews ? '' : 'none';
+        if (toggleSpacing) toggleSpacing.style.display = hasOlderNews ? '' : 'none';
+      }
+
+      document.addEventListener('DOMContentLoaded', updateOlderNewsToggle);
     </script>
 
     <div class="page-wrapper">
@@ -321,7 +333,7 @@
                                 <span style="display: block; margin: 5px 0; padding-left: 0; text-indent: 0;"><span style="display: inline-block; width: 6em; vertical-align: top; text-align: right; padding-right: 0.5em;">• <strong>[08/2024]</strong></span><span style="display: inline-block; width: calc(100% - 6.5em); vertical-align: top;">Graduated with my B.S. in Data Science from Tufts University!</span></span>
                             </p>
                             <span id="older_news" style="display: none;"></span>
-                            <br>
+                            <br id="news_toggle_spacing">
                             <a href="#" onclick="toggleOlderNews(); return false;" id="news_toggle" style="color: #666;">Show older news</a>
 
                         </td>
